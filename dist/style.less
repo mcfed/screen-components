@@ -1,0 +1,571 @@
+.mc-transfer {
+  /* color: deepskyblue */
+}
+
+.mc-transfer .ant-transfer-list-content {
+  position: relative;
+}
+.mc-transfer .ant-transfer-list-content-item > span {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  left: 30px;
+}
+.mc-transfer .ant-transfer-list-content-item {
+  text-overflow: inherit;
+}
+.mc-transfer .ant-transfer-list-footer div {
+  display: inline-block;
+}
+.mc-transfer .custom-item {
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.mc-transfer .custom-item > div {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+/* 穿梭框左侧 */
+.mc-transfer
+  .ant-transfer-list:first-child
+  .ant-transfer-list-header
+  .header-item
+  div:not(:first-child) {
+  display: none;
+}
+.mc-transfer
+  .ant-transfer-list:first-child
+  .ant-transfer-list-content
+  .custom-item
+  div:not(:first-child) {
+  display: none;
+}
+.mc-transfer
+  .ant-transfer-list:first-child
+  .ant-transfer-list-content
+  .custom-item
+  div:first-child {
+  max-width: 100% !important;
+}
+
+/* 穿梭框头部样式 */
+.mc-transfer .ant-transfer-list-header-selected {
+  display: inline-block;
+  width: 90%;
+  padding: 0 20px;
+}
+.mc-transfer .header-item {
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.tree-in-modal {
+  max-height: 220px;
+  overflow: auto;
+  border: 1px solid #cfdae5;
+  background-color: #fff;
+}
+.advanced-search-panel {
+  position: relative;
+  flex-shrink: 0;
+  padding-right: 170px;
+  position: relative;
+  .ant-col-8 {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+  .ant-form-item-label {
+    line-height: 32px;
+  }
+  .ant-input-group .ant-form-item .ant-form-item-control-wrapper .ant-select {
+    .ant-select-selection {
+      margin-right: -1px;
+      height: 32px;
+      border-radius: 4px 0 0 4px;
+    }
+  }
+  .advanced-search-toolbar {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    .ant-btn {
+      margin: 0 5px;
+    }
+    .ant-btn-ghost {
+      border-width: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .anticon-down {
+      cursor: pointer;
+    }
+  }
+  .ant-btn-circle {
+    border-width: 0;
+  }
+
+  .ant-select-selection--multiple {
+    .ant-select-selection__rendered {
+      overflow: hidden;
+      height: 30px;
+      ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        white-space: nowrap;
+        li {
+          float: none;
+          margin-top: 8px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+.button-groups {
+  .ant-btn-group {
+    > span {
+      vertical-align: top;
+    }
+  }
+}
+@lineHeight: 32px;
+.ant-collapse-header {
+  outline: none;
+  box-shadow: none;
+  .CollapsePanel-header {
+    line-height: @lineHeight;
+    position: relative;
+    padding: 10px;
+    .CollapsePanel-title {
+      margin-bottom: 0;
+    }
+    .CollapsePanel-extra {
+      float: right;
+      .ant-form-item {
+        margin-bottom: 0;
+        .ant-form-item-control {
+          line-height: @lineHeight;
+        }
+      }
+    }
+  }
+}
+.ant-table-detail {
+  .ant-table-title {
+    font-size: 14px;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    color: #000;
+  }
+  .ant-table-title,
+  .ant-table-content .ant-table-body table th,
+  .ant-table-content .ant-table-body table td {
+    text-indent: 20px;
+  }
+  .ant-table-content .ant-table-body {
+    table {
+      border: 1px solid #f0f0f0;
+      border-collapse: collapse;
+      tr {
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #f0f0f0;
+        }
+        &:hover td {
+          background-color: #fff;
+        }
+        td {
+          padding: 9px 16px;
+          border: none;
+          white-space: normal;
+        }
+        th {
+          padding: 9px 0;
+          font-weight: normal;
+          border: 1px solid #f0f0f0;
+          width: 18%;
+          color: #000;
+          background: #e8e8e8;
+        }
+      }
+    }
+  }
+  // .ant-table-tbody td:nth-child(odd) {
+  //   background-color: #f7f7f7;
+  //   width: 200px;
+  // }
+}
+.testClass {
+  .ant-form-item {
+    width: 50%;
+    // float: left;
+    display: inline-block;
+  }
+}
+.ant-table-tbody > .editable-row > td {
+  padding: 20px 20px;
+}
+.editable-row {
+  .ant-form-explain {
+    position: absolute;
+  }
+  .ExtraColumn {
+    .ant-form-explain {
+      position: inherit;
+    }
+  }
+}
+.td-ellipsis {
+  border-collapse: collapse;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  /* max-width: 300px; */
+}
+.element-text-box {
+  > .ant-row {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  > .ant-form-item {
+    // width:100px;
+    margin-bottom: 0;
+    > .ant-col-18 {
+      width: 100%;
+    }
+  }
+}
+
+.element-noreset {
+  > .ant-form-item {
+    width: 100% !important;
+  }
+}
+
+.isBeteen {
+  > .ant-row {
+    margin: 0 10px;
+  }
+}
+.head-searchbar-panel {
+  padding-left: 10px;
+  padding-right: 10px;
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  .head-searchbar-fieldsbox
+    > .head-searchbar-col-nolabel
+    .ant-form-item
+    .ant-form-item-control-wrapper {
+    width: 100%;
+  }
+}
+.mc-transfer {
+  .custom-item-block {
+    display: inline-block;
+  }
+  .ant-transfer-list {
+    margin-top: 30px;
+  }
+  .ant-transfer-list-content {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .ant-transfer-list-content-item > span {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    left: 30px;
+  }
+  .ant-transfer-list-content-item {
+    text-overflow: inherit;
+  }
+  .ant-transfer-list-footer div {
+    display: inline-block;
+  }
+  .custom-item {
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .custom-item .custom-item-block {
+    overflow: hidden; /*也可以用 width:0 代替*/
+    flex: 1;
+  }
+  .custom-item .custom-item-block:first-child {
+    padding-left: 10px;
+  }
+  .custom-item .custom-item-block .custom-item-content {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    border-collapse: collapse;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  /* 穿梭框头部样式 */
+  .ant-transfer-list-header-selected {
+    display: inline-block;
+    width: 94%;
+    padding: 0;
+  }
+  .header-item {
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 32px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .header-item div {
+    overflow: hidden; /*也可以用 width:0 代替*/
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  .header-item div:first-child {
+    margin-left: 10px;
+  }
+
+  /*穿梭框title样式*/
+  .ant-transfer-list-header-title {
+    width: 100%;
+    right: 0;
+    top: -30px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  /*transfer list 组件样式*/
+  .transfer-list {
+    overflow: hidden;
+  }
+  .transfer-list-content-item {
+    text-overflow: initial;
+  }
+
+  .transfer-list-virtualized {
+    padding-bottom: 10px;
+  }
+}
+.mc-transfer {
+  .custom-item-block {
+    display: inline-block;
+  }
+  .ant-transfer-list {
+    margin-top: 30px;
+  }
+  .ant-transfer-list-content {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .ant-transfer-list-content-item > span {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    left: 30px;
+  }
+  .ant-transfer-list-content-item {
+    text-overflow: inherit;
+  }
+  .ant-transfer-list-footer div {
+    display: inline-block;
+  }
+  .custom-item {
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .custom-item .custom-item-block {
+    overflow: hidden; /*也可以用 width:0 代替*/
+    flex: 1;
+  }
+  .custom-item .custom-item-block:first-child {
+    padding-left: 10px;
+  }
+  .custom-item .custom-item-block .custom-item-content {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    border-collapse: collapse;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  /* 穿梭框头部样式 */
+  .ant-transfer-list-header-selected {
+    display: inline-block;
+    width: 94%;
+    padding: 0;
+  }
+  .header-item {
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 32px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .header-item div {
+    overflow: hidden; /*也可以用 width:0 代替*/
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  .header-item div:first-child {
+    margin-left: 10px;
+  }
+
+  /*穿梭框title样式*/
+  .ant-transfer-list-header-title {
+    width: 100%;
+    right: 0;
+    top: -30px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  /*transfer list 组件样式*/
+  .transfer-list {
+    overflow: hidden;
+  }
+  .transfer-list-content-item {
+    text-overflow: initial;
+  }
+
+  .transfer-list-virtualized {
+    padding-bottom: 10px;
+  }
+}
+.ant-panel-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #fff;
+  > .ant-spin-nested-loading {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    > .ant-spin-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+  .ant-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .ant-panel-head {
+      display: flex;
+      padding: 16px 24px;
+      color: rgba(0, 0, 0, 0.65);
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      border-radius: 4px 4px 0 0;
+      .ant-panel-head-title {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .ant-panel-body {
+      display: flex;
+      flex: 1;
+      overflow: auto;
+      flex-direction: column;
+      padding: 10px 16px;
+    }
+    .ant-panel-footer {
+      padding: 10px 16px;
+      text-align: center;
+      border-top: 1px solid #e8e8e8;
+      border-radius: 0 0 4px 4px;
+      button {
+        margin: 0 4px;
+      }
+    }
+  }
+}
+.TimeRangePicker-compact {
+  .ant-time-picker {
+    width: 50%;
+  }
+}
+.treeTile .ant-tree-child-tree-open li {
+  float: left !important;
+}
+
+.treeTile .ant-tree-treenode-switcher-open {
+  display: block !important;
+}
+
+.treeTile .ant-tree-child-tree-open {
+  display: block !important;
+  position: relative !important;
+  top: -32px !important;
+  left: 200px !important;
+  width: calc(100% - 200px);
+  overflow: hidden;
+}
+
+.treeTile .ant-tree-child-tree > li:first-child {
+  padding-top: 4px !important;
+}
+
+.treeTile .ant-tree-switcher {
+  visibility: hidden !important;
+}
+
+.treeTile .ant-tree-treenode-switcher-open::before {
+  display: block;
+  clear: both;
+  height: 0;
+  content: '';
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.treeNoData {
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 0px;
+}
+.tree-in-modal {
+  max-height: 220px;
+  overflow: auto;
+  border: 1px solid #cfdae5;
+  background-color: #fff;
+  overflow-x: hidden;
+}
