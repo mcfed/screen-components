@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import moment from 'moment';
 import Timer from '../Timer';
-// import {formatDate} from '../../utils/common';
 
-const DEFAULT_FORMAT = 'YYY-MM-DD HH:mm:ss';
+const DEFAULT_FORMAT = 'YYYY-MM-DD HH:mm:ss';
 
 interface ICurrentTimeProps {
-  format: string;
+  format?: string;
   className?: string;
 }
 
@@ -90,7 +89,7 @@ export default class CurrentTime extends Component<ICurrentTimeProps, ICurrentTi
         autoRefresh={this.autoRefresh}
         interval={1 * 1000}
         callback={this.handlerTick.bind(this)}>
-        <span className={className} ref='time'>
+        <span className={className}>
           {this.formatDate(timestamp, format)}
         </span>
       </Timer>
