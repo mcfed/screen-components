@@ -13,6 +13,7 @@ interface INumberScrollerProps {
 
 interface INumberScrollerState {
   decimal: boolean;
+  computedSize: number;
 }
 
 export default class NumberScroller extends Component<INumberScrollerProps, INumberScrollerState> {
@@ -29,8 +30,6 @@ export default class NumberScroller extends Component<INumberScrollerProps, INum
     this.setState({
       decimal: String(data).indexOf('.') > -1
     });
-    this.calcSize();
-    this.calcData();
   }
 
   /**
@@ -54,7 +53,18 @@ export default class NumberScroller extends Component<INumberScrollerProps, INum
   }
 
   renderNumRotaryTable() {
-    return null;
+    const {cellClass = '', splitChart, splitBit, data} = this.props;
+    let numEles = NUM_ELEMENT;
+    if (!!splitChart && !!splitBit) {
+      numEles = numEles.concat([splitChart])
+    }
+    return (
+      <React.Fragment>
+          {data}
+        {/* {this.calcSize().map} */}
+      </React.Fragment>
+    )
+    // return this.calcSize.map((item => this.renderNumScrollerAtom(index));
   }
 
   renderNumScrollerAtom() {
