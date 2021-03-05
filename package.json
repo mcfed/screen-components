@@ -1,7 +1,7 @@
 {
-  "name": "@mcfed/chartComponents",
+  "name": "@mcfed/chart-components",
   "version": "0.0.1",
-  "description": "@mcf for components",
+  "description": "@mcfed for chart-components",
   "main": "lib/index.js",
   "module": "src/index.js",
   "types": "lib/index.d.ts",
