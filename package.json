@@ -1,6 +1,6 @@
 {
   "name": "@mcfed/chart-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@mcfed for chart-components",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "build": "npm run tsc",
-    "tsc": "node scripts/build.js && node scripts/tsc.js"
+    "tsc": "node scripts/build.js && node scripts/tsc.js",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "@mcf",
