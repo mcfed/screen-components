@@ -1,6 +1,6 @@
 {
   "name": "@mcfed/screen-components",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "@mcfed for screen-components",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -86,7 +86,7 @@
     "typescript": "^3.7.5"
   },
   "optionalDependencies": {
-    "antd": "^3.9.3"
+    "antd": "^4.24.0"
   },
   "dependencies": {
     "@ant-design/css-animation": "^1.7.2",
